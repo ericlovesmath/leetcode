@@ -18,6 +18,9 @@ class Solution:
 
         raise RuntimeError("Solution::twoSum failed to find solution")
 
+        # Space Complexity: O(n) for hash map
+        # Time Complexity: O(n) to iterate through list twice
+
 
 if __name__ == "__main__":
     sol = Solution()
