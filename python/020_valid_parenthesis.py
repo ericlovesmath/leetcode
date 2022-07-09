@@ -7,7 +7,7 @@ class Solution:
             2. All brackets must be closed in order
         """
 
-        # We can use a stack to add open brackets and remove closed brackets
+        # We can use a stack to add Open brackets and remove Closed brackets
 
         stack = []
         open = set("({[")
