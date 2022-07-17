@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def maxProfit(self, prices: list[int]) -> int:
+    def maxProfit(self, prices: List[int]) -> int:
         """
         Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
         Given `prices` where `prices[i]` is the price of a stock on day `i`.

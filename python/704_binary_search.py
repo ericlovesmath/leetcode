@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def search(self, nums: list[int], target: int) -> int:
+    def search(self, nums: List[int], target: int) -> int:
         """
         Link: https://leetcode.com/problems/binary-search/
         Given sorted integers `nums`, return the index of `target`.
