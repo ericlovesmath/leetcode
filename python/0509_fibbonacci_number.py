@@ -15,6 +15,13 @@ class Solution:
             fibb.append(fibb[-2] + fibb[-1])
         return fibb[n]
 
+        # Method 2: Dynamic Space O(1)
+
+        a, b = 0, 1
+        for _ in range(n):
+            a, b = b, a + b
+        return a
+
         # Method 2: Binet's Formula
         # Probably worse for interviews, but explicit formula exists
         # Space O(1), Time O(1)
