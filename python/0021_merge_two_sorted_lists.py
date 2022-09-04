@@ -1,12 +1,6 @@
 from typing import Optional
 
-
-class ListNode:
-    """Singly Linked List"""
-
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from utils import ListNode, linkedList
 
 
 class Solution:
@@ -44,6 +38,12 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
 
-    # Check regular merge
-    # Check one None
-    # Check two Nones
+    assert sol.mergeTwoLists(
+        linkedList([1, 2, 4]), linkedList([1, 3, 4])
+    ) == linkedList([1, 1, 2, 3, 4, 4])
+
+    assert sol.mergeTwoLists(linkedList([]), linkedList([])) == linkedList([])
+
+    assert sol.mergeTwoLists(linkedList([]), linkedList([0])) == linkedList(
+        [0]
+    )
