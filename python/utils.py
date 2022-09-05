@@ -34,7 +34,7 @@ class TreeNode:
 		self.right = None
 
 def binaryTree(arr):
-	if not arr:
+	if len(arr) == 0:
 		return None
 	N = len(arr)
 	root = TreeNode(arr[0])
@@ -54,7 +54,7 @@ def binaryTree(arr):
 				i += 1
 	return root
 
-def binaryTree2Arr(root):
+def bt_to_arr(root):
 	res = []
 	queue = [root]
 	while queue:
