@@ -12,12 +12,13 @@ class Solution:
 
         relations = [i for i in range(26)]
 
-        # Maximum of 26 recurrences, can reduce to 5 with path compression
-        # Either way, O(1)
+        # Find with Path Compression, effectively constant  
         def find(i):
             if relations[i] == i:
                 return i
-            return find(relations[i])
+            parent = find(relations[i])
+            relations[i] = parent
+            return parent
 
         c_to_i = {chr(ord("a") + i): i for i in range(26)}
 
