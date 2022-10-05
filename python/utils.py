@@ -28,10 +28,10 @@ def linkedList(arr: List[int]) -> Optional[ListNode]:
     return dummy.next
 
 class TreeNode:
-	def __init__(self, x):
-		self.val = x
-		self.left = None
-		self.right = None
+    def __init__(self, x: int):
+        self.val: int = x
+        self.left: Optional[TreeNode] = None
+        self.right: Optional[TreeNode] = None
 
 def binaryTree(arr):
 	if len(arr) == 0:
